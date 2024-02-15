@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Easybank landing page</title>
 </head>
-<body class="relative">
+<body class="relative md:overflow-hidden">
     <header id="header">
         <!-- header container -->
-        <div class="h-20 container mx-auto flex items-start justify-between space-x-10 pt-6">
+        <div class="h-20 container mx-auto flex items-start justify-between space-x-10 pt-6 px-6 md:px-0 lg:px-20">
             <!-- logo -->
             <div class="">
                 <img src="images/logo.svg" alt="" class="w-40 h-10">
@@ -50,7 +50,36 @@
     </header>
 
     <!-- hero secton -->
-    <section id="hero" class="mt-20 bg-DarkBlue">hello</section>
+    <section id="hero" class="relative mt-20 overflow-hidden bg-VeryLightGray">
+        <div class="relative container mx-auto flex flex-col-reverse items-center justify-center md:flex-row md:items-start md:justify-start md:px-0 lg:px-20">
+            <div class="max-w-md px-6 py-20 flex flex-col space-y-8 items-center text-center md:px-0 md:py-32 md:max-w-lg md:text-left md:items-start">
+                <h3 class="text-black font-light text-5xl tracking-wider">Next generation digital banking</h3>
+                <p class="text-GrayishBlue text-lg">
+                    Take your life online. Your Easybank account will be a one-stop-shop for spending,
+                    saving, budgeting, investing, and much more.
+                </p>
+                <div class="flex items-center">
+                    <button class="text-white tracking-wide linear-background rounded-full py-3 px-8 hover:opacity-80">Request Invite</button>
+                </div>
+            </div>
+            <div class=" md:hidden pb-10">
+                <img src="images/bg-intro-desktop.svg" alt="" class="">
+                <img src="images/image-mockups.png" alt="" class="absolute -top-32">
+            </div>
+            
+            <!-- <img src="images/bg-intro-desktop.svg" alt="" class=""> -->
+            <!-- bg-hero md and lg screen -->
+            <div class="hidden absolute -top-1/2 md:-right-[1000px] lg:-right-[800px] xl:-right-[650px] md:block">
+                <img src="images/bg-intro-desktop.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- mockup for md and lg screen -->
+    <div class="hidden absolute -top-1/2 md:-right-[400px] lg:-right-[300px] xl:-right-[200px] md:block">
+        <img src="images/image-mockups.png" alt="" class="overflow-x-hidden">
+    </div>
+   
     
 </body>
 </html>

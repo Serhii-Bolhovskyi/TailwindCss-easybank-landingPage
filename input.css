@@ -12,8 +12,58 @@
     @apply bg-gradient-to-r from-LimeGreen to-BrightCyan
 }
 
-/* .linearBg {
-    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    transition: border-bottom-width 0.3s ease; 
-} */
+.ficon:hover {
+    filter: invert(39%) sepia(88%) saturate(1050%) hue-rotate(104deg) brightness(101%) contrast(97%);
+  }
+  
+
+.hamburger {
+    cursor: pointer;
+    width: 22px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: hsl(233, 26%, 24%);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+  background: hsl(233, 26%, 24%);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+  
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+    background-color: hsl(233, 26%, 24%);
+}
+  
+.open .hamburger-middle {
+    display: none;
+}
+  
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    background-color: hsl(233, 26%, 24%);
+}
 
